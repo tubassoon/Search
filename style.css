@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a:hover {
+
+    text-decoration: underline;
+  }
+a {
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+nav {
+    font: 14px "Lato", sans-serif;
+    font-weight: 500;
+    width: 98%;
+    height: 35px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li {
+  margin: 10px;
+  display: inline-block;
+  text-align: center; 
+}
+
+nav img {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background-color: #F4F6F6;
+  margin-bottom: 22px;
+  color: #9c9c9c;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#top-navbar {
+  padding-right: 30px;
+}
+
+#bottom-navbar {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fa-th {
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+
+.main {
+  width: 100%;
+  height: 85vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 25px;
+}
+
+.main-search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  position: relative;
+}
+
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 280px;
+  height: 95px;
+  position: relative;
+}
+
+.buttons {
+  display: block;
+  margin: 30px 150px 15px 150px;
+  
+}
+.searchbar {
+  width: 582px;
+  height: 42px;
+}
+
+[type=text] {
+  padding: 5px 5px 5px 30px;
+  border: 1px solid #e7e7e7;
+  border-radius: 35px;
+  width: 550px;
+  height: 30px;
+}
+
+[type=text]:hover {
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(65,67,64,0.8);
+      -moz-box-shadow: 0px 0px 5px -1px rgba(65,67,64,0.8);
+            box-shadow: 0px 0px 5px -1px rgba(65,67,64,0.8);
+}
+[type=text]:focus {
+  outline: none;
+}
+
+[type=submit] {
+  border: none;
+  height: 36px;
+  width: 130px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+[type=submit]:hover {
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.searchbar .fa-search {
+  position: absolute;
+  left: 5px;
+  z-index: 2;
+  display: block;
+  width: 15px;
+  height: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #aaa;
+  padding-left: 5px;
+}
+
+.searchbar .mic {
+  position: absolute;
+  right: 5px;
+  z-index: 2;
+  display: block;
+  width: 15px;
+  height: 20px;
+  line-height: 40px;
+  text-align: center;
+  padding-right: 5px;
+  margin: 10px 5px;
+}
+
+/*
+  ========================================
+ Images
+  ========================================
+*/
+
+.logo h4 {
+  color: #4285F4;
+  font: 16px "Lato", sans-serif;
+  position: absolute;
+  right: 13px;
+  bottom: 7px;
+}
+
+.image-search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+
+}
+
+.image-searchbar {
+  width: 582px;
+  height: 42px;
+  position: relative;
+}
+
+.image-searchbar input[type=text] {
+  padding: 5px 15px 5px 30px;
+  border: 1px solid #e7e7e7;
+  border-radius: 35px;
+  width: 550px;
+  height: 30px;
+}
+.image-searchbar .gray-search {
+  position: absolute;
+  left: 5px;
+  z-index: 2;
+  display: block;
+  width: 15px;
+  height: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #aaa;
+  padding-left: 5px;
+}
+
+.image-searchbar .fa-camera {
+  position: absolute;
+  right: 55px;
+  z-index: 2;
+  display: block;
+  width: 15px;
+  height: 25px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #aaa;
+}
+
+.image-searchbar .mic {
+  position: absolute;
+  right: 25px;
+  z-index: 2;
+  display: block;
+  width: 15px;
+  height: 20px;
+  line-height: 40px;
+  text-align: center;
+
+  margin: 10px 5px;
+}
+
+.image-searchbar .blue-search {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 15px;
+  height: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #4285F4;
+}
+
+/*
+  ========================================
+  Advanced
+  ========================================
+*/
+#advanced-top-navbar {
+  display: inline-block;
+  background-color: #F4F6F6;
+  color: #9c9c9c;
+  height: auto;
+  width: 100%;
+}
+.advanced-logo {
+  width: 95px;
+  height: 30px;
+}
+
+.ad-search {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+}
+
+.ad-search h2 {
+  color: #DB4437;
+  font: 20px "Lato", sans-serif;
+}
+
+.advanced-form {
+  display: grid;
+  margin-top: 15px;
+  padding: 25px;
+  border-top: 2px solid #F4F6F6;
+  border-bottom: 2px solid #F4F6F6;
+  grid-template-columns: 180px 575px 375px;
+  grid-template-rows: repeat(7, 30px);
+  grid-gap: 15px 5px;
+  justify-items: left;
+  align-items: center;
+}
+.advanced-form p { 
+  font: 11px "Lato", sans-serif;
+  color: #2E2E2E;
+}
+
+.advanced-form label {
+  font: 14px "Lato", sans-serif;
+}
+
+.advanced-form h4 {
+  font: 14px "Lato", sans-serif;
+  color: #2E2E2E;
+}
+
+.advanced-searchbar {
+  width: 550px;
+  height: 20px;
+  border-radius: 0;
+  padding: 5px;
+}
+
+.advanced-searchbar-sm {
+  width: 250px;
+  height: 20px;
+  border-radius: 0;
+  padding: 5px;
+}
+.center{
+  padding: 9px;
+}
+
+.col-3 {
+  grid-column-start: 3;
+}
+
+.ad-btn {
+  color: #e7e7e7;
+  background-color: #4285F4;
+  margin-top: 25px;
+}
